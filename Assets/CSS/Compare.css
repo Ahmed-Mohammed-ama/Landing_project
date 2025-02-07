@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    src: url("../Fonts/Roboto/Roboto-Black.ttf");
+    font-family: new;
+}
+@font-face{
+    src: url("../Fonts/Roboto-Regular.ttf");
+    font-family: Roboto-reglur;
+}
+
+@font-face{
+    src: url("../Fonts/Roboto/Roboto-Bold.ttf");
+    font-family: Roboto-bold;  
+}
+body{
+    background-color: #32312f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(38, 61, 131, 255);
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    background: rgb(38, 61, 131, 255);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: new;
+    padding: 0 20px;
+    font-size: 27px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+  
+    display: inline-block;
+    padding: 20px 0;
+    transition: 0.2s;
+
+}
+
+.navbar a:hover {
+    color: rgb(244, 114, 36,255);
+}
+
+.navbar_links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.Sign{
+    border-bottom: 1px solid orange;
+    border-radius: 10px;
+    height: 47px;
+    width: fit-content;
+}
+.Sign:hover{
+    background: rgba(255, 255, 255, 0.288);
+    box-shadow: rgba(207, 102, 102, 0.3);
+}
+
+
+
+
+
+
+
+
+
+#menu-tog {
+    display: none;
+}
+
+.fa-solid img {
+    width: 32px;
+    display: none;
+}
+
+
+
+
+/* START Responsive */
+
+@media (width < 860px) {
+    .navbar .navbar_links {
+        position: fixed;
+        left: 0;
+        top: 65px;
+        height: 100%;
+        padding-left: 20px;
+        padding-top: 30px;
+        display: block;
+        background: rgb(38, 61, 131, 255);
+        width: 200px;
+        left: -100%;
+        transition: all 0.4s ease;
+
+    }
+
+    #menu-tog:checked~.navbar_links {
+        left: 0;
+    }
+
+    .navbar .navbar_links li {
+        font-size: 18px;
+    }
+
+    #hamburger-btn {
+        cursor: pointer;
+    }
+
+    .fa-solid img {
+        width: 32px;
+        display: inline;
+
+    }
+    .navbar h2{
+        font-size: 20px;
+    }
+}
+
+@media (width < 220px) {
+    .navbar h2{
+        font-size: 15px;
+    }
+}
+/* END Responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.compare-section{
+   padding: 0 3%;
+   margin: 10% auto 0;
+}
+.compare-section h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-bottom: 22px;
+    font-family: lato;
+}
+.compare-section p{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 2%;
+
+}
+
+.Samsung h2,.Apple h2, .Oneplus h2{
+    text-align: center;
+    color: rgb(244, 114, 36,255);
+    padding-top: 3%;
+    font-size:32px;
+    font-family: lato;
+}
+
+.Samsung p, .Apple p,.Oneplus p{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+   
+    font-size: 16px;
+}
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sofadione;   
+
+
+
+}
+.table thead{
+    background-color: rgb(244, 114, 36,255);
+
+}
+
+.table thead tr th{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    color: #ffff;
+    padding: 12px;
+    border: 1px solid #dee2e685;
+
+
+}
+
+.table tr td{
+    font-size: 14px;
+    font-weight:normal;
+    letter-spacing: 0.35px;
+    color: #f1f1f1;
+    padding: 8px;
+    background-color: #3c3f44;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+
+.table tbody tr .Price{
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 0.35px;
+color: #ff1046;
+
+
+}
+
+
+
+
+
+
+
+/* Start of responsive */
+@media (max-width: 768px){
+    .table thead{
+        display: none;
+
+    }
+
+    .table,.table tbody,.table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table tr td{
+        text-align: right;
+        position: relative;
+    }
+    .table td:before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+
+
+    }
+    .compare-section h1 {
+       
+        font-size: 20px;
+        
+    }
+    .compare-section p,.Samsung p, .Apple p,.Oneplus p{
+       
+        font-size: 9px;
+       
+    }
+    .Samsung h2,.Apple h2, .Oneplus h2{
+       
+        font-size:14px;
+       
+    }
+    
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End of responsive */
+
+
+

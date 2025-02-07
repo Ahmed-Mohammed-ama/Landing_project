@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    margin-top: 2px;
+}
+
+.form {
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+    padding: 17px;
+    font-size: larger;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 30%;
+    text-align: justify;
+
+}
+.form .submit{
+    position: relative;
+    padding-left: 40%;
+   
+}

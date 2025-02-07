@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+/* Start fonts */
+@font-face{
+    src: url("../Fonts/Roboto/Roboto-Black.ttf");
+    font-family: new;
+}
+@font-face{
+    src: url("../Fonts/Roboto-Regular.ttf");
+    font-family: Roboto-reglur;
+}
+/* End fonts */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of services */
+
+.services {
+    padding-top: 80px;
+}
+
+
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2{
+    text-decoration: underline;
+    font-family: icons-font;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.section-title p{
+    padding-top: 15px;
+    font-family: Roboto-reglur;
+}
+.services .container .products img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    outline: 5px solid #ebebeb;
+
+}
+
+
+/* Start Responsive for image*/
+@media (width < 540px) {
+
+    .services .container .products img {
+        width: 60px;
+        height: 60px;  
+    }
+}
+
+@media (width < 345px) {
+
+    .services .container .products img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (width < 270px) {
+
+    .services .container .products img {
+        width: 37px;
+        height: 37px;
+    }
+}
+/* End Responsive for image*/
+
+
+
+.services .product {
+    width: calc(100% /3 - 30px);
+    text-align: center;
+    list-style: none;
+    background-color: #ffff;
+    padding: 40px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.services .products {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.services .products div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    margin-bottom: -13px;
+    margin-top: 10px;
+}
+
+.services .product p {
+    margin-top: 5px;
+    font-family: Roboto-reglur;
+
+}
+
+
+.seemore {
+    text-align: center;
+    padding: 10px;
+    border-radius: 13px;
+    background: orange;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 0;
+    transition: 0.3s;
+    background-color: rgb(244, 141, 36, 255);
+    border: 2px solid rgb(244, 141, 36, 255);
+    font-family: icons-font;
+    font-size: 18px;
+
+}
+
+.seemore:hover {
+    color: black;
+    background: rgba(255, 255, 255, 0);
+}
+
+
+
+/* End of services */

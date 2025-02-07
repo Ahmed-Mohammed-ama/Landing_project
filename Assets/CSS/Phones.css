@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+/* Start fonts */
+@font-face {
+    src: url("../Fonts/Poppins-BoldItalic.ttf");
+    font-family: navbar-title;
+
+}
+
+@font-face {
+    src: url("../Fonts/Roboto/Roboto-BoldItalic.ttf");
+    font-family: icons-font;
+}
+
+@font-face {
+    src: url("../Fonts/Roboto-Regular.ttf");
+    font-family: Roboto-reglur;
+}
+
+
+/* End fonts */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of services */
+
+.services {
+    padding-top: 80px;
+}
+
+
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2{
+    text-decoration: underline;
+    font-family: icons-font;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.section-title p{
+    padding-top: 15px;
+    font-family: Roboto-reglur;
+}
+.product h3{
+    font-family: navbar-title;
+}
+.services .container .products img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    outline: 5px solid #ebebeb;
+
+}
+
+
+/* Start Responsive for image*/
+@media (width < 540px) {
+
+    .services .container .products img {
+        width: 60px;
+        height: 60px;  
+    }
+}
+
+@media (width < 345px) {
+
+    .services .container .products img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (width < 270px) {
+
+    .services .container .products img {
+        width: 37px;
+        height: 37px;
+    }
+}
+/* End Responsive for image*/
+
+
+
+.services .product {
+    width: calc(100% /3 - 30px);
+    text-align: center;
+    list-style: none;
+    background-color: #ffff;
+    padding: 40px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.services .products {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.services .products div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    margin-bottom: -13px;
+    margin-top: 10px;
+}
+
+.services .product p {
+    margin-top: 5px;
+    font-family: Roboto-reglur;
+
+}
+
+
+
+.thepriceofproduct{
+    padding: 10px 5px;
+    width: 70%;
+    background-color: orange;
+    margin-left: 17%;
+    margin-top:8px;
+    border-radius: 5px;
+
+    font-family: icons-font;
+    color: red;
+    text-decoration:line-through;
+    border: 2px solid red;
+    border: 2px solid orange;
+
+}
+.product a{
+    text-decoration: none;
+}
+
+.thepriceofproduct:hover{
+    color: rgb(255, 247, 239);
+    background-color: rgb(0, 0, 0);
+}
+/* End of services */
+

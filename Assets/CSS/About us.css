@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.5;
+
+}
+
+@font-face {
+    font-family: popie;
+    src: url("../Fonts/Poppins-BoldItalic.ttf");
+}
+
+.Aboutus {
+    width: 100%;
+    min-width: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../Images/company.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 100px;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: popie;
+}
+
+
+.content img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.content .Aboutcompany {
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+
+.content h5 {
+    font-size: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: popie;
+}
+
+.content .me {
+    font-size: 17px;
+
+}
+
+@media (width < 800px) {
+    .Aboutus{
+        width: 200px;
+        height: fit-content;
+    }
+}
+@media (width < 600px) {
+    .Aboutus{
+        width: 200px;
+        height: 1000px;
+    }
+}
+@media (width < 400px) {
+    .Aboutus{
+        width: 200px;
+        height: 1600px;
+    }
+}
